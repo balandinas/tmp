@@ -10,7 +10,7 @@ pipeline {
     stage('build') {
       steps {
         echo 'building'
-        cat 'main.txt'
+        sh 'cat main.txt'
       }
     }
 

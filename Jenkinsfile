@@ -3,13 +3,14 @@ pipeline {
   stages {
     stage('checkout') {
       steps {
-        git(url: 'https://github.com/elestopadov/jenkins-example-app', branch: 'main')
+        git(url: 'https://github.com/balandinas/tmp1.git', branch: 'main')
       }
     }
 
     stage('build') {
       steps {
         echo 'building'
+        cat 'main.txt'
       }
     }
 
